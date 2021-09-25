@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Work</title>
+  <link rel="shoortcut icon" href="https://code-step.com/demo/html/portfolio1/img/favicon.ico" alt="アイコン">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header id="header">
+    <h1 class="site-title">
+      <a href="#">My Work</a>
+    </h1>
+
+    <div class="header-right">
+      <nav>
+        <ul>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#works">Works</a>
+          </li>
+          <li>
+            <a href="#news">News</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="icon" src="https://code-step.com/demo/html/portfolio1/img/icon-instagram.png" alt="インスタアイコン">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <!-- メイン写真 -->
+    <div id="main-picture">
+      <picture>
+        <!-- アイフォン用写真 -->
+        <source media="(max-width:600px)" srcset="https://source.unsplash.com/random">
+
+        <!-- PC用の写真 -->
+        <img src="https://source.unsplash.com/random">
+      </picture>
+    </div>
+
+    <!-- ABOUTセクション -->
+    <section id="about" class="wrapper">
+     <h2 class="sec-title">About</h2>
+      <ul>
+       <li>Xxxxxx Abbey</li>
+       <li>2th Floor xxxxx Builiding x-x-x Tokyo, Japan</li>
+       <li>tel:000-0000-0000</li>
+       <li>url:www.xxxxxxx.jp</li>
+       <li>mail:xxx@xxxxx.jp</li>
+      </ul>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos incidunt optio illo quibusdam. Ipsam maxime, <br>adipisci asperiores esse harum ullam dolor tenetur ab ut minima reprehenderit blanditiis cum inventore. Quisquam!</p>
+    </section>
+
+    <!-- WORKSセクション -->
+    <section id="works" class="wrapper">
+      <h2 class="sec-title">Works</h2>
+       <ul>
+        <li>
+         <a href="#">
+              <img src="https://source.unsplash.com/random">
+            </a>
+        </li>
+        <li>
+          <a href="#">
+             <img src="https://source.unsplash.com/random">
+          </a>
+        </li>
+        <li>
+            <a href="#">
+              <img src="https://source.unsplash.com/random">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="https://source.unsplash.com/random">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="https://source.unsplash.com/random">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="https://source.unsplash.com/random">
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- NEWSセクション -->
+      <section id="news" class="wrapper">
+        <h2 class="sec-title">News</h2>
+        <dl>
+          <dt>2020.xx.xx</dt>
+          <dd>デザイン雑誌「xxxxx」に掲載していただきます。</dd>
+          <dt>2020.xx.xx</dt>
+          <dd>xx月xx日から写真集発売</dd>
+          <dt>2020.xx.xx</dt>
+          <dd>【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキスト</dd>
+          <dt>2019.xx.xx</dt>
+          <dd>デザイン雑誌「xxxxx」に掲載していただきます。</dd>
+          <dt>2019.xx.xx</dt>
+          <dd>【個展開催のお知らせ】テキストテキスト</dd>
+        </dl>
+      </section>
+
+      <!-- CONTACTセクション -->
+      <section id="contact" class="wrapper">
+        <h2 class="sec-title">Contact</h2>
+        <form action="#" method="post">
+          <dl>
+            <dt>
+              <label for="name">NAME</label>
+            </dt>
+            <dd>
+              <input type="text" id="name" name="your-name">
+            </dd>
+            <dt>
+              <label for="email">E-MAIL</label>
+            </dt>
+            <dd>
+              <input type="email" id="email" name="your-email">
+            </dd>
+            <dt>
+              <label for="message">MESSAGE</label>
+            </dt>
+            <dd>
+              <textarea id="textarea" name="your-message">
+              </textarea>
+            </dd>
+          </dl>  
+        </form>
+        <div class="button">
+          <input type="button" value="送信">
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>copyright by</p>
+    </footer>
+
+</body>
+</html>

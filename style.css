@@ -1,0 +1,215 @@
+body *{
+  box-sizing: border-box; 
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic' 
+}
+a{
+  text-decoration: none;
+  color: #24292e;
+}
+li{
+  list-style: none;
+  color: #24292e;
+}
+p{
+  color: #24292e;
+}
+img{
+  border-style: none;
+  object-fit: cover;
+}
+/* 以下ヘッダーへのスタイル */
+#header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 250px;
+  max-width: 960px;
+  padding: 0 4%;
+  margin: 0 auto;
+}
+.site-title h1{
+  padding: 10px;
+  margin: 0;
+  font-size: 5rem;
+}
+#header ul{
+  display: flex;
+  margin: 0;
+  padding: 10px 0;
+}
+#header li{
+  margin-left: 20px;
+  font-size: 1rem;
+}
+.header-right li img.icon{
+  width: 20px;
+}
+
+/* 以下PCスタイル */
+#main-picture{
+  margin-bottom: 130px;
+}
+#main-picture picture img{
+  min-width: 100%;
+  height: 500px;
+}
+.sec-title{
+  text-align: center;
+  margin:80px 0;
+  font-size: 1.9rem;
+}
+.wrapper{
+  margin: 0 auto 130px auto;
+  padding: 0 4%;
+  font-size: 0.9rem;
+  max-width: 960px;
+  color: #24292e;
+}
+
+/* ABOUTスタイル */
+#about ul{
+  padding: 0;
+}
+#about li{
+  margin-bottom: 5px;
+}
+#about li:first-child{
+  margin-bottom: 25px;
+}
+#about p{
+  margin-top: 25px;
+  text-align: justify;
+}
+
+/* WORKSスタイル */
+#works img{
+  max-width: 100%;
+  height: 160px;
+  width: 270px;
+}
+#works li{
+  width: 31%;
+  margin-bottom: 25px;
+  padding: 0;
+}
+#works ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+/* NEWSスタイル */
+#news dl{
+  display: flex;
+  flex-wrap: wrap;
+  border-top: solid 1px #c8c8c8;
+}
+#news dt {
+  width: 20%;
+  padding: 15px;
+  border-bottom: solid 1px #c8c8c8;
+}
+#news dd {
+  width: 80%;
+  padding: 15px;
+  margin: 0;
+  border-bottom: solid 1px #c8c8c8;
+}
+
+/* CONTACTスタイル */
+#contact dl{
+  display: flex;
+  flex-wrap: wrap;
+}
+#contact dt{
+  width: 15%;
+}
+#contact dd{
+  width: 85%;
+  margin-left: 0;
+  margin-bottom: 15px;
+}
+#contact dd input, #contact dd textarea{
+  width: 100%;
+  padding: 20px;
+  border: solid 1px #c8c8c8;
+}
+#contact .button{
+  text-align: center;
+}
+#contact .button input{
+  width: 200px;
+  padding: 15px 0;
+  color: aliceblue;
+  background-color: black;
+}
+footer p{
+  text-align: center;
+  padding: 10px 20px;
+  background-color:  black;
+  color: #fff;
+  font-size: 0.5rem;
+  margin: 0;
+}
+
+/* アイフォン用スタイル */
+@media  screen and (max-width : 600px){
+#header{
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+#main-picture picture img{
+  height: 420px;
+  object-fit: cover;
+  width: 100%;
+}
+.wrapper{
+  margin-bottom: 70px;
+}
+  #about ul, p{
+    padding-left: 0;
+  }
+#works ul{
+  flex-direction: column;
+}
+#works li{
+  width: 100%;
+}
+#works img{
+  max-width: 100%;
+  height: 300px;
+  width: 500px;
+  object-fit: cover;
+}
+#news dl{
+  flex-direction: column;
+}
+#news dt{
+  border-style: none;
+  padding-bottom: 0;
+}
+#news dd{
+  width: 100%;
+  padding-top: 0;
+}
+#contact dl{
+  flex-direction: column;
+}
+#contact dd{
+  width: 100%; 
+}
+#contact dd input{
+  width: 100%;
+  padding: 10px;
+}
+#contact dt{
+  width: 100%;
+}
+}
